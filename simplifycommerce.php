@@ -315,8 +315,6 @@ class SimplifyCommerce extends PaymentModule
 		$delete_customer_card_post = Tools::getValue('deleteCustomerCard');
 		$save_customer_post = Tools::getValue('saveCustomer');
 
-		Logger::addLog($this->l('Simplify Commerce - Save Customer = '.$save_customer_post), 1, null, 'Cart', (int)$this->context->cart->id, true);
-
 		$charge_customer_card = Tools::getValue('chargeCustomerCard');
 
 		$token = !empty($simplify_token_post) ? $simplify_token_post : null;
